@@ -1,0 +1,39 @@
+.fxfamilynav-header.dark #tabzilla::before {
+    background-color: #0c99d5;
+}
+#tabzilla::before {
+    background-color: #0c99d5;
+}
+#tabzilla::before {
+    background-color: transparent;
+    content: "";
+    display: block;
+    height: 26px;
+    left: 28px;
+    position: absolute;
+    top: 0;
+    width: 88px;
+    z-index: 1;
+}
+#tabzilla {
+    position: absolute;
+    right: 0;
+    top: -2px;
+}
+#tabzilla {
+    float: right;
+    position: relative;
+}
+
+#tabzilla a {
+    background-image: url("../img/tab.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 37px;
+    overflow: hidden;
+    position: relative;
+    text-indent: 120%;
+    white-space: nowrap;
+    width: 147px;
+    z-index: 2;
+}

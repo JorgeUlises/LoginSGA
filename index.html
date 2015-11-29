@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 10]><html class="lt-ie10" dir="ltr" lang="es"><![endif]-->
+<!--[if gte IE 10]><!-->
+<html class=" no-touch no-reveal-pw getusermedia" dir="ltr" lang="es">
+	<!--<![endif]-->
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title> Sistema de Gestión Académica </title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/default.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!--[if lt IE 9]><script src="/bower_components/html5shiv/dist/8ea65279.html5shiv.js"></script><![endif]-->
+	</head>
+	<body>
+		<header>
+			<div id="tabzilla">
+				<a href="http://www.udistrital.edu.co">Udistrital</a>
+			</div>
+		</header>
+		<div style="opacity: 1;" class="fade-in-forward" id="udistrital-logo"></div>
+		<div style="opacity: 1;" class="fade-in-forward" id="stage">
+			<div class="sign-in">
+				<div id="main-content" class="card">
+					<header>
+						<h1 id="fxa-signin-header"><!-- L10N: For languages structured like English, the second phrase can read "to continue to %(serviceName)s" --> Sistema de Gestión Académica <span class="service">Identificarse</span></h1>
+					</header>
+
+					<section>
+
+						<div class="error"></div>
+						<div class="success"></div>
+
+						<form novalidate="">
+							<div class="input-row">
+								<input class="email" placeholder="Código" spellcheck="false" autofocus="" type="email">
+							</div>
+
+							<div class="input-row password-row">
+								<input class="password tooltip-below" id="password" placeholder="Contraseña" value="" pattern=".{8,}" required="" type="password">
+
+								<input id="show-password" class="show-password" aria-controls="password" tabindex="-1" data-novalue="" type="checkbox">
+								<label for="show-password" class="show-password-label"> Mostrar </label>
+							</div>
+
+							<div class="button-row">
+								<button id="submit-btn" type="submit" class="disabled">
+									Identificarse
+								</button>
+							</div>
+						</form>
+
+						<div class="links">
+							<a href="/reset_password" class="left reset-password">¿Olvidaste la contraseña?</a>
+
+							<a href="/oauth/signup" class="right sign-up">Crear una cuenta</a>
+						</div>
+
+						<div class="privacy-links">
+							Al continuar, estás de acuerdo con los <a id="fxa-tos" href="http://condor2.udistrital.edu.co/appserv/terminos_y_condiciones.pdf" target="_blank">Términos del servicio</a> del Sistema de Gestión Académica.
+						</div>
+
+					</section>
+				</div>
+			</div>
+		</div>
+		<!--[if !(IE) | (gte IE 10)]><!-->
+		<noscript>
+			Cóndor necesita Javascript.
+		</noscript>
+		<!--<![endif]-->
+	</body>
+</html>
