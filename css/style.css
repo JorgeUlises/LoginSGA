@@ -1,31 +1,24 @@
-.fxfamilynav-header.dark #tabzilla::before {
+.fxfamilynav-header.dark #tabudistrital::before {
     background-color: #0c99d5;
 }
-#tabzilla::before {
+#tabudistrital::before {
     background-color: #0c99d5;
 }
-#tabzilla::before {
+#tabudistrital::before {
     background-color: transparent;
     content: "";
-    display: block;
-    height: 26px;
-    left: 28px;
-    position: absolute;
-    top: 0;
-    width: 88px;
     z-index: 1;
 }
-#tabzilla {
+#tabudistrital {
     position: absolute;
     right: 0;
-    top: -2px;
+    top: 6px;
 }
-#tabzilla {
+#tabudistrital {
     float: right;
-    position: relative;
 }
 
-#tabzilla a {
+#tabudistrital a {
     background-image: url("../img/tab.png");
     background-repeat: no-repeat;
     display: block;
@@ -36,4 +29,30 @@
     white-space: nowrap;
     width: 147px;
     z-index: 2;
+}
+aside{
+	width: 100px;
+	height: 500px;
+	overflow: visible;
+	position: absolute;
+	top: 100px;
+	right: 10px;
+}
+.lateral-icon{
+	width: 100px;
+	height: 100px;
+	background-size: 90% 90%;
+	background-repeat: no-repeat;
+}
+
+.lateral-icon.news{
+	background-image: url("../img/News-100.png");
+}
+
+.lateral-icon.help{
+	background-image: url("../img/Questions-100.png");
+}
+
+.lateral-icon.others{
+	background-image: url("../img/Plane-100.png");
 }

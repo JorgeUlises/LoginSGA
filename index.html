@@ -12,22 +12,24 @@
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="css/default.css">
 		<link rel="stylesheet" href="css/style.css">
-		<!--[if lt IE 9]><script src="/bower_components/html5shiv/dist/8ea65279.html5shiv.js"></script><![endif]-->
+		<!--[if lt IE 9]><script src="js/libs/html5shiv.min.js"></script><![endif]-->
 	</head>
 	<body>
 		<header>
-			<div id="tabzilla">
+			<div id="tabudistrital">
 				<a href="http://www.udistrital.edu.co">Udistrital</a>
 			</div>
-		</header>
-		<div style="opacity: 1;" class="fade-in-forward" id="udistrital-logo"></div>
+		</header>		
 		<div style="opacity: 1;" class="fade-in-forward" id="stage">
 			<div class="sign-in">
 				<div id="main-content" class="card">
+					
+					<div style="opacity: 1;" class="fade-in-forward" id="udistrital-logo"></div>
+					
 					<header>
 						<h1 id="fxa-signin-header"><!-- L10N: For languages structured like English, the second phrase can read "to continue to %(serviceName)s" --> Sistema de Gestión Académica <span class="service">Identificarse</span></h1>
 					</header>
-
+					
 					<section>
 
 						<div class="error"></div>
@@ -42,12 +44,11 @@
 								<input class="password tooltip-below" id="password" placeholder="Contraseña" value="" pattern=".{8,}" required="" type="password">
 
 								<input id="show-password" class="show-password" aria-controls="password" tabindex="-1" data-novalue="" type="checkbox">
-								<label for="show-password" class="show-password-label"> Mostrar </label>
 							</div>
 
 							<div class="button-row">
-								<button id="submit-btn" type="submit" class="disabled">
-									Identificarse
+								<button id="submit-btn" type="submit">
+									Ingresar
 								</button>
 							</div>
 						</form>
@@ -65,10 +66,25 @@
 					</section>
 				</div>
 			</div>
+			<aside>
+				<div>
+					<div class="lateral-icon news"></div>
+					<div class="lateral-icon help"></div>
+					<div class="lateral-icon others"></div>
+				</div>
+			</aside>
+			<section class="noticias">
+				<div>
+					lalala
+				</div>
+				<div>
+					contenido
+				</div>
+			</section>
 		</div>
 		<!--[if !(IE) | (gte IE 10)]><!-->
 		<noscript>
-			Cóndor necesita Javascript.
+			SGA necesita Javascript.
 		</noscript>
 		<!--<![endif]-->
 	</body>
