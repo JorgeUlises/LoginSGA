@@ -68,14 +68,34 @@
 			</div>
 			<aside>
 				<div>
-					<div class="lateral-icon news"></div>
-					<div class="lateral-icon help"></div>
-					<div class="lateral-icon others"></div>
+					<div class="lateral-icon news" data-open-id="noticias"></div>
+					<div class="lateral-icon help" data-open-id="ayuda"></div>
+					<div class="lateral-icon others" data-open-id="otros"></div>
 				</div>
 			</aside>
-			<section class="noticias">
+			<section id="noticias" class="panel-lateral" style="display:none;">
 				<div>
 					lalala
+				</div>
+				<div>
+					contenido
+					contenido<br>contenido<br>contenido<br>contenido<br>contenido<br>contenido<br>contenido<br>
+					contenido<br>contenido<br>contenido<br>contenido<br>contenido<br>contenido<br>contenido<br>
+					contenido<br>contenido<br>contenido<br>contenido<br>contenido<br>contenido<br>contenido<br>
+					contenido<br>contenido<br>contenido<br>contenido<br>contenido<br>contenido<br>contenido<br>
+				</div>
+			</section>
+			<section id="ayuda" class="panel-lateral" style="display:none;">
+				<div>
+					Ayuda
+				</div>
+				<div>
+					contenido
+				</div>
+			</section>
+			<section id="otros" class="panel-lateral" style="display:none;">
+				<div>
+					Otros e información general
 				</div>
 				<div>
 					contenido
@@ -87,5 +107,7 @@
 			SGA necesita Javascript.
 		</noscript>
 		<!--<![endif]-->
+		<script src="js/libs/jquery-1.6.2.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
