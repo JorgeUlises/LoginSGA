@@ -12,7 +12,7 @@
 #tabudistrital {
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 15px;
 }
 #tabudistrital {
     float: right;
@@ -21,12 +21,12 @@
     background-image: url("../img/tab.png");
     background-repeat: no-repeat;
     display: block;
-    height: 40px;
+    height: 36px;
     overflow: hidden;
     position: relative;
     text-indent: 120%;
     white-space: nowrap;
-    width: 156px;
+    width: 147px;
     z-index: 2;
 }
 .panel-lateral{
@@ -61,7 +61,6 @@ aside{
 	cursor: pointer;
 	margin-top: 5px;
 }
-
 .lateral-icon.news{
 	background-image: url("../img/News-100.png");
 }
