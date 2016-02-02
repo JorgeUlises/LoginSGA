@@ -21,12 +21,12 @@
     background-image: url("../img/tab.png");
     background-repeat: no-repeat;
     display: block;
-    height: 36px;
+    height: 40px;
     overflow: hidden;
     position: relative;
     text-indent: 120%;
     white-space: nowrap;
-    width: 147px;
+    width: 164px;
     z-index: 2;
 }
 .panel-lateral{
