@@ -2,103 +2,159 @@
 <!--[if lt IE 10]><html class="lt-ie10" dir="ltr" lang="es"><![endif]-->
 <!--[if gte IE 10]><!-->
 <html class=" no-touch no-reveal-pw getusermedia" dir="ltr" lang="es">
-	<!--<![endif]-->
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title> Sistema de Gestión Académica </title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="css/default.css">
-		<link rel="stylesheet" href="css/style.css">
-		<!--[if lt IE 9]><script src="js/libs/html5shiv.min.js"></script><![endif]-->
-	</head>
-	<body>
-		<header>
-			<div id="tabudistrital">
-				<a href="http://www.udistrital.edu.co">Udistrital</a>
-			</div>
-		</header>
-		<div style="opacity: 1;" class="fade-in-forward" id="stage">
-			<div class="sign-in">
-				<div id="main-content" class="card">
+<!--<![endif]-->
 
-					<div style="opacity: 1;" class="fade-in-forward" id="udistrital-logo"></div>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Sistema de Gestión Académica </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]><script src="js/libs/html5shiv.min.js"></script><![endif]-->
+</head>
 
-					<header>
-						<h1 id="fxa-signin-header"><!-- L10N: For languages structured like English, the second phrase can read "to continue to %(serviceName)s" --> Sistema de Gestión Académica <span class="service">Identificarse</span></h1>
-					</header>
-
-					<section>
-
-						<div class="error"></div>
-						<div class="success"></div>
-
-						<form novalidate="">
-							<div class="input-row">
-								<input class="email" placeholder="Código" spellcheck="false" autofocus="" type="email">
-							</div>
-
-							<div class="input-row password-row">
-								<input class="password tooltip-below" id="password" placeholder="Contraseña" value="" pattern=".{8,}" required="" type="password">
-
-								<input id="show-password" class="show-password" aria-controls="password" tabindex="-1" data-novalue="" type="checkbox">
-							</div>
-
-							<div class="button-row">
-								<button id="submit-btn" type="submit">
-									Ingresar
-								</button>
-							</div>
-						</form>
-
-						<div class="links">
-							<a href="/reset_password" class="/*left*/ reset-password">¿Olvidaste la contraseña?</a>
-
-							<!--<a href="/oauth/signup" class="right sign-up">Crear una cuenta</a>-->
-						</div>
-
-						<div class="privacy-links">
-							Al continuar, estás de acuerdo con los <a id="fxa-tos" href="http://condor2.udistrital.edu.co/appserv/terminos_y_condiciones.pdf" target="_blank">Términos del servicio</a> del Sistema de Gestión Académica.
-						</div>
-
-					</section>
-				</div>
-			</div>
-			<aside>
-				<div>
-					<div class="lateral-icon news" data-open-id="noticias"></div>
-					<div class="lateral-icon help" data-open-id="ayuda"></div>
-					<div class="lateral-icon others" data-open-id="otros"></div>
-				</div>
-			</aside>
-			<section id="noticias" class="panel-lateral" style="display:none;">
-				
-			</section>
-			<section id="ayuda" class="panel-lateral" style="display:none;">
-				<div>
-					Ayuda
-				</div>
-				<div>
-					contenido
-				</div>
-			</section>
-			<section id="otros" class="panel-lateral" style="display:none;">
-				<div>
-					Otros e información general
-				</div>
-				<div>
-					contenido
-				</div>
-			</section>
+<body>
+	<header>
+		<div id="tabudistrital">
+			<a href="http://www.udistrital.edu.co">Udistrital</a>
 		</div>
-		<!--[if !(IE) | (gte IE 10)]><!-->
-		<noscript>
-			SGA necesita Javascript.
-		</noscript>
-		<!--<![endif]-->
-		<script src="js/libs/jquery-1.6.2.min.js"></script>
-		<script src="js/script.js"></script>
-	</body>
+	</header>
+	<div style="opacity: 1;" class="fade-in-forward" id="stage">
+		<div class="sign-in">
+			<div id="main-content" class="card">
+
+				<div style="opacity: 1;" class="fade-in-forward" id="udistrital-logo"></div>
+
+				<header>
+					<h1 id="fxa-signin-header"><!-- L10N: For languages structured like English, the second phrase can read "to continue to %(serviceName)s" --> Sistema de Gestión Académica <!--<span class="service">Identificarse--></span></h1>
+				</header>
+
+				<section>
+
+					<div class="error"></div>
+					<div class="success"></div>
+
+					<form novalidate="">
+						<div class="input-row">
+							<input class="email" placeholder="Código" spellcheck="false" autofocus="" type="email">
+						</div>
+
+						<div class="input-row password-row">
+							<input class="password tooltip-below" id="password" placeholder="Contraseña" value="" pattern=".{8,}" required="" type="password">
+
+							<input id="show-password" class="show-password" aria-controls="password" tabindex="-1" data-novalue="" type="checkbox">
+						</div>
+
+						<div class="button-row">
+							<button id="submit-btn" type="submit">
+								Ingresar
+							</button>
+						</div>
+					</form>
+
+					<div class="links">
+						<a href="/reset_password" class="/*left*/ reset-password">¿Olvidaste la contraseña?</a>
+
+						<!--<a href="/oauth/signup" class="right sign-up">Crear una cuenta</a>-->
+					</div>
+
+					<div class="privacy-links">
+						Al continuar, estás de acuerdo con los <a id="fxa-tos" href="http://condor2.udistrital.edu.co/appserv/terminos_y_condiciones.pdf" target="_blank">Términos del servicio</a> del Sistema de Gestión Académica.
+					</div>
+
+				</section>
+			</div>
+		</div>
+		<aside>
+			<div>
+				<div class="lateral-icon news" data-open-id="noticias"></div>
+				<div class="lateral-icon help" data-open-id="ayuda"></div>
+				<div class="lateral-icon others" data-open-id="otros"></div>
+			</div>
+		</aside>
+		<section id="noticias" class="panel-lateral" style="display:none;">
+			<span class="callout section1"></span>
+			<p>Noticias</p>
+			<hr>
+			<div class="noticia_index">
+				<font color="RED">Modificación Calendario Académico 2016<br> </font> Consulte la <a href="/descargas/circular_001_2016.pdf" target="_blank" :="">Circular No. 001</a> de Vicerrectoría Académica en la que se modifican fechas del Calendario Académico.
+			</div>
+			<hr>
+			<div class="noticia_index">
+				<font color="RED"> <b> ALERTA, MENSAJE DE SEGURIDAD!!!</b> </font>
+				<br>
+			</div>
+			<hr>
+			<div class="noticia_index">
+				<font color="RED"> <b>HORARIOS 2016-1</b> <br>  </font>
+				<a target="_blank" href="https://www.dropbox.com/sh/61jzu4e33xaqa18/AACQOWdyMIBmIuH7pAwOPPspa?dl=0">Descargar...</a>.
+			</div>
+
+			<hr>
+			<div class="noticia_index">
+				<b>Calendario Académico 2016-1</b>
+				<br>
+			</div>
+			<hr>
+			<div class="noticia_index">
+				<b>Franjas adiciones y cancelaciones 2016-1</b>
+				<br>
+			</div>
+			<hr>
+			<div class="noticia_index">
+				<b>IMPORTANTE, CAMBIO DE CLAVES!</b>
+				<br>
+			</div>
+			<hr>
+		</section>
+		<section id="ayuda" class="panel-lateral" style="display:none;">
+			<span class="callout section2"></span>
+			<p>Ayuda</p>
+			<div>
+				<br><a href="https://oas.udistrital.edu.co/lamasu/index.php?data=fgFZPQk8Ylagtmuza7cDsoQGTiUhedXSALItf37BuI6t2MP1UJnYa3hxeSkOZwbSjWIm3RVxStePILtXqjPcOLovSBOnY9uYzQx5Y2uQHyTtqfKPb2DmYEtBI1AKkDLCYRvu8Pj_">Recuperación contraseña de Sistema de Gestión Académica</a>
+				<br>
+				<br><a href="https://docs.google.com/a/correo.udistrital.edu.co/file/d/0BzG7rdBcnWhoUWNsRzlTNmJoZVU/preview">Video recuperación de clave</a>
+				<br>
+				<br><a href="https://www.udistrital.edu.co/novedades/particularNews.php?idNovedad=3985&amp;Type=N">Recuperación contraseña del Correo Electrónico</a>
+				<br>
+			</div>
+		</section>
+		<section id="otros" class="panel-lateral" style="display:none;">
+			<span class="callout section3"></span>
+			<p>Otros e información general</p>
+			<div>
+				<br><a href="https://condor.udistrital.edu.co/moodle/index.php?">Moodle</a>
+				<br>
+				<br><a href="https://portalws.udistrital.edu.co/soporte/">Manuales y Videotutoriales de Ayuda</a>
+				<br>
+				<br><a href="https://sgral.udistrital.edu.co/sgral/index.php">Calendario Académico</a>
+				<br>
+				<br><a href="http://sgral.udistrital.edu.co/xdata/sgral/Derechos_Pecuniarios2015.pdf">Derechos Pecuniarios</a>
+				<br>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div class="define" id="pie">
+			<p style="text-align:center;">
+				<a href="http://autoevaluacion.udistrital.edu.co/version3/"> <img src="img/acreditacion.png" /> </a>
+				<a href="http://autoevaluacion.udistrital.edu.co/version3/"> <img src="img/autoevaluacion.png" /> </a>
+			</p>
+			<p style="text-align:center; ">
+          <a href="https://www.udistrital.edu.co/">Universidad Distrital Francisco José de Caldas</a> PBX: 3239300. Todos los derechos reservados &copy;. .:: <a href="http://condor2.udistrital.edu.co/appserv/terminos_y_condiciones.pdf">Términos, condiciones de uso y política de privacidad</a>          ::..
+      </p>
+		</div>
+	</footer>
+	<!--[if !(IE) | (gte IE 10)]><!-->
+	<noscript>
+		SGA necesita Javascript.
+	</noscript>
+	<!--<![endif]-->
+	<script src="js/libs/jquery-1.6.2.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
 </html>

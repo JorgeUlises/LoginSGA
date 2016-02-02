@@ -1,5 +1,5 @@
-/* Author: 
-
+/* Author:
+JORGE ULISES USECHE CUELLAR
 */
 $( document ).ready(init);
 
@@ -9,9 +9,10 @@ function init(){
 
 function cargarEventosPanel(){
 	$(".lateral-icon").click(function (e){
-		cerrarEventosPanel();
 		var id = $(this).attr("data-open-id");
-		abrirEventoPanelPorId(id);
+		var actual = $("#"+id).css("display");
+		cerrarEventosPanel();
+		abrirEventoPanelPorId(id, actual);
 		var handler = function() {
 			cerrarEventosPanel();
 			$("body").unbind( "click", this );
@@ -25,26 +26,10 @@ function cerrarEventosPanel(){
 	$(".panel-lateral").css("display","none");
 }
 
-function abrirEventoPanelPorId(id){
-	$("#"+id).css("display","block");
+function abrirEventoPanelPorId(id, actual){
+	if(actual=="block"){
+		$("#"+id).css("display","none");
+	} else {
+		$("#"+id).css("display","block");
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
